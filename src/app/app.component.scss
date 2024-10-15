@@ -1,0 +1,17 @@
+.app-container{
+    width: 100%;
+    height: 100%;
+}
+.app-container header mat-toolbar{
+    height: 50px;
+    max-height: 50px;
+    background-color: rgb(71, 87, 188);
+    color: #fff;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+.mat-icon{
+    color: #ffff; 
+}

@@ -1,0 +1,26 @@
+<div class="container">
+  <h2>Add New Contact</h2>
+  <form #contactForm="ngForm" (ngSubmit)="save(contactForm)"> <!-- Add ngForm for validation -->
+    <div class="form">
+
+      <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput [(ngModel)]="contact.name" name="name" required />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Email Address</mat-label>
+        <input matInput [(ngModel)]="contact.email" name="email" required />
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Phone</mat-label>
+        <input matInput [(ngModel)]="contact.phone" name="phone" required />
+      </mat-form-field>
+    </div>
+    <div class="action">
+      <button mat-raised-button type="submit">Save</button>
+      <button mat-raised-button [routerLink]="'/'">Back</button>
+    </div>
+  </form>
+</div>

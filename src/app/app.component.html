@@ -1,0 +1,13 @@
+<section class="app-container">
+  <header>
+    <mat-toolbar>
+      My Contacts({{totalContacts()}})
+      <button mat-icon-button [routerLink] ="'/add'" [disabled]="conditionalContacts()"  *ngIf="currentRoute !== '/add'">
+        <mat-icon>add_circle</mat-icon>
+      </button>
+    </mat-toolbar>
+  </header>
+  <div class="content-container">   
+    <router-outlet />
+  </div>
+</section>
